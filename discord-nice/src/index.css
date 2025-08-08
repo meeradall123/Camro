@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-darkBg text-white antialiased;
+}
+
+/* Smooth scroll and selection */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: theme('colors.brand.600');
+  color: white;
+}
